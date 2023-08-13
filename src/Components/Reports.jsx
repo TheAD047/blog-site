@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {redirect} from "react-router-dom";
 
 const Reports = () => {
     const [reports, setReports] = useState([{}]);

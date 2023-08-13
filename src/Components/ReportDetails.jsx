@@ -39,7 +39,7 @@ const ReportDetails = () => {
             })
                 .then(res => res.json())
                 .then(res => setReport(res))
-    }, [])
+    }, [reportID])
 
 
     return <>

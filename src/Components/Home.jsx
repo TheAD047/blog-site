@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from "react";
-import {useNavigate} from "react-router-dom";
+
 
 const Home = () => {
     const [blogs, setBlogs] = useState([{}]);
-    const nav = useNavigate();
 
     useEffect( () => {
-        const res = fetch('/api/discover')
+        fetch('/api/discover')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -14,11 +13,10 @@ const Home = () => {
             })
             .catch(err => {
                 console.log(err)
-                nav('/500')
             })
 
         console.log(blogs)
-    },[])
+    },[blogs])
 
 
     return <>

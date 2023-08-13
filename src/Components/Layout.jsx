@@ -1,4 +1,4 @@
-import {Outlet, Link, useNavigate} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 import {useSignOut} from "react-auth-kit";
 import {useEffect, useState} from "react";
 
@@ -50,7 +50,7 @@ const Layout = () => {
                                     <li className="nav-item" role="presentation"><a className="nav-link" href="/resgister">Register</a></li>
                                 </>}
                                 {auth && <>
-                                    <li className="nav-item" role="presentation"><a className="nav-link" onClick={signOut}>sign out</a></li>
+                                    <li className="nav-item" role="presentation"><a className="nav-link" href='*' onClick={signOut}>sign out</a></li>
                                     <li className="nav-item" role="presentation"><a className="nav-link" href={`/user/${username}/blogs`}>Your Blogs</a></li>
                                 </>}
                             </ul>

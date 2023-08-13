@@ -1,8 +1,8 @@
 import {useSignIn} from "react-auth-kit";
 import React, {useEffect, useState} from "react";
-import {useLocation, useNavigate, useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
-function Login(props: any) {
+function Login() {
     const signIn = useSignIn();
     const [token, setToken] = useState('');
     const [username, setUsername] = useState('');
@@ -44,7 +44,7 @@ function Login(props: any) {
 
             nav('/')
         }
-    }, [token])
+    }, [nav, signIn, token, username])
 
 
     return <>
