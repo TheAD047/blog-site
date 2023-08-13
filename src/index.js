@@ -6,7 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "./Components/Layout";
 import Index from "./Components/Index";
 import Blog from "./Components/Blog";
-import User from "./Components/User";
+//import User from "./Components/User";
 import BlogList from "./Components/BlogList";
 import Home from "./Components/Home";
 import Reports from "./Components/Reports";
